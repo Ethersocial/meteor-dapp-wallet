@@ -11,7 +11,7 @@
                     {{#if $eq ($.Session.get "network") "ropsten"}}
                         <a href="http://ropsten.etherscan.io/tx/{{transactionHash}}" target="_blank" style="font-size: 0.4em;">{{transactionHash}}</a>
                     {{else}}
-                        <span style="font-size: 0.4em;">{{transactionHash}}</span>
+                        <a href="http://test.ethersocial.net/tx/{{transactionHash}}" target="_blank" style="font-size: 0.4em;">{{transactionHash}}</a>
                     {{/if}}
                 {{/if}}
             {{/if}}
@@ -41,6 +41,7 @@
                        {{#if tokenId}}
                             {{tokenValue}}
                         {{else}}
+<!-- 트랜잭션 팝업창 전송조회에서 금액 나오는 부분--> 
                             {{formatTransactionBalance value exchangeRates}}
                             {{#if $neq unit 'ether'}}
                                 <br>
@@ -84,22 +85,24 @@
                         <td>{{i18n "wallet.transactions.block"}}</td>
                         <td>
                            {{#if $eq ($.Session.get "network") "main"}} 
-                            <a href="http://ethersocial.net/block/{{blockHash}}" title="{{blockHash}}" target="_blank" class="dapp-shorten-text">
+                            <a href="http://ethersocial.net/block/{{blockNumber}}" title="{{blockHash}}" target="_blank" class="dapp-shorten-text">
                                 {{blockNumber}}
                                 <br>
                                 {{blockHash.substr 0 40}}...
                             </a>
                             {{else}}
                                 {{#if $eq ($.Session.get "network") "test"}}
-                                <a href="http://ropsten.etherscan.io/block/{{blockHash}}" title="{{blockHash}}" target="_blank" class="dapp-shorten-text">
+                                <a href="http://test.ethersocial.net/block/{{blockNumber}}" title="{{blockHash}}" target="_blank" class="dapp-shorten-text">
                                     {{blockNumber}}
                                     <br>
                                     {{blockHash.substr 0 40}}...
                                 </a>
                                 {{else}}
+                                <a href="http://test.ethersocial.net/block/{{blockNumber}}" title="{{blockHash}}" target="_blank" class="dapp-shorten-text">
                                     {{blockNumber}}
                                     <br>
                                     {{blockHash.substr 0 40}}...
+                                </a>
                                 {{/if}}
                             {{/if}}
                         </td>

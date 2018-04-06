@@ -28,10 +28,10 @@
                 "pendingConfirmationsBadge": "승인 대기 중!",
                 "nodeSyncing": "__blockDiff__ 블록 남음",
                 "blockReceived": "새 블록을 받았음",
-                "timeSinceBlock": " 마지막 블록 경과시간",
+                "timeSinceBlock": "마지막 블록 이후",
                 "peers": "피어(peers)",
                 "waitingForBlocks": "블록을 기다리는 중..",
-                "testnetExplain": "현재 테스트넷 상에 있습니다. 진짜 ESN을 이 주소로 절대 보내지 마세요.",
+                "testnetExplain": "현재 테스트넷 상에 있습니다. 진짜 이더를 이 주소로 절대 보내지 마세요.",
                 "noAccounts": {
                     "title": "계정이 없습니다",
                     "text": "강력한 암호를 가진 계정이 최소 1개는 있어야 합니다."
@@ -53,7 +53,7 @@
                 "title": "계정을 선택하세요"
             },
             "testnetWallet": {
-                "walletNeedsDeployment": "테스넷상에 있습니다.<br><br>원본 지갑 컨트랙트 코드가 없습니다. 지갑컨트랙트의 서브컨트랙들이 다음의 당신 주소에서 사용할 코드가 필요합니다: <br><br><small><code>__account__</code></small><br><br><em> 이 주소에 최소한 1 ESN이 있어야 합니다!</em>",
+                "walletNeedsDeployment": "테스트넷상에 있습니다.<br><br>원본 지갑 컨트랙트 코드가 없습니다. 지갑컨트랙트의 서브컨트랙들이 다음의 당신 주소에서 사용할 코드가 필요합니다: <br><br><small><code>__account__</code></small><br><br><em> 이 주소에 최소한 1 ESN이 있어야 합니다!</em>",
                 "testnetWalletDeployed": "오리지널 지갑 컨트랙트가 설치되었습니다.<br> 사용된 주소는 다음과 같습니다:<br><br><small><code>__address__</code></small>."
             },
             "addToken": {
@@ -89,7 +89,7 @@
             "owners": "소유자",
             "walletsDescription": "이것은 블록체인에 저장되는 컨트랙트들로서 ESN을 보관하고 보호할 수 있습니다. 다수의 소유자를 지정할 수 있고 모든 트랜잭션 로그기록을 보관합니다.",
             "walletsDescriptionNotEnoughFunds": "1 ESN 이상을 가지고 있으면 여러 가지 기능을 가진 컨트랙트들을 만들 수 있습니다. 지갑 컨트랙트은 기본 스마트 컨트랙트의 한가지 유형인데, 보안 강화를 위해 자금을 다수의 계정에 의해 통제되도록 하거나 하루 출금량을 제한할 수도 있습니다. 여러분의 필요에 맞게 컨트랙트를 만들기 위해서는 <em> 컨트랙트 </em> 메뉴 탭을 클릭하세요",
-            "accountsDescription": "계정은 비밀번호로 보호된 키를 가리키며, ESN 혹은 ESN기반 토큰을 저장합니다. 계정을 통해 컨트랙트(계약)를 제어할 수 있으며, 입금 트랜잭션을 보여주지는 않습니다.",
+            "accountsDescription": "계정은 비밀번호로 보호된 키를 가리키며, ESN 혹은 ESN기반 토큰을 저장합니다. 계정을 통해 컨트랙트를 제어할 수 있으며, 입금 트랜잭션을 보여주지는 않습니다.",
             "buttons": {
                 "deposit": "이더 입금",
                 "buyEther": "비트코인을 사용한 입금",
@@ -284,7 +284,7 @@
             "title": "주문형 <strong>토큰</strong>",
             "subTitle": "추가된 토큰",
             "admin": "__name__ (관리자 페이지)",
-            "description": "토큰은 이더소셜 플랫폼 위에 만들어진 화폐와 다른 대체수단들을 말합니다. 토큰들을 열람하고 송금하기 위해서는, 토큰들의 주소를 이 목록에 등록해야 합니다. <a href=\"https://ethereum.org/token#the-code\" target=\"_blank\">주문형 토큰 예제</a>를 수정해 주문형 토큰을 만들거나, <a href=\"https://www.ethereum.org/token\" target=\"_blank\">이더소셜 토큰들</a>를 통해 더 학습을 할 수도 있습니다.",
+            "description": "토큰은 이더소셜 플랫폼 위에 만들어진 화폐와 다른 대체수단들을 말합니다. 토큰들을 열람하고 송금하기 위해서는, 토큰들의 주소를 이 목록에 등록해야 합니다. <a href=\"https://ethersocial.network/token#the-code\" target=\"_blank\">주문형 토큰 예제</a>를 수정해 주문형 토큰을 만들거나, <a href=\"https://www.ethersocial.network/token\" target=\"_blank\">이더소셜 토큰들</a>를 통해 더 학습을 할 수도 있습니다.",
             "deleteToken": "목록에서 <strong>__token__</strong> 토큰을 삭제하고 싶습니까?",
             "addedToken": "리스트에 __token__ 토큰 추가됨",
             "editedToken": "__token__ 토큰 수정됨",
